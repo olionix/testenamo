@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Um Pedido Especial</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: linear-gradient(120deg, #fff0f5, #f8bbd0);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      color: #880e4f;
+    }
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3em;
+      animation: fadeInDown 2s ease;
+    }
+    p {
+      font-size: 1.2em;
+      margin: 20px;
+      animation: fadeInUp 2s ease;
+    }
+    .buttons {
+      margin-top: 30px;
+      animation: fadeInUp 2.5s ease;
+    }
+    .buttons button {
+      background-color: #ec407a;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      border-radius: 30px;
+      font-size: 1.1em;
+      cursor: pointer;
+      margin: 0 15px;
+      transition: all 0.3s ease;
+    }
+    .buttons button:hover {
+      transform: scale(1.05);
+      background-color: #d81b60;
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <h1>Quer passar a vida toda comigo?</h1>
+  <p>Prometo estar com você nos dias bons e ruins, nas risadas e nas lágrimas.<br>
+  Esse é o meu jeitinho de dizer que quero dividir todos os momentos ao seu lado. 💖</p>
+
+  <div class="buttons">
+    <button onclick="window.location.href='aceitou.html'">Aceito!</button>
+    <button onclick="window.location.href='recusou.html'">Recusar</button>
+  </div>
+</body>
+</html>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nossa História</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: #fff0f5;
+      color: #880e4f;
+      overflow-x: hidden;
+    }
+    h1, h2 {
+      font-family: 'Great Vibes', cursive;
+      color: #c2185b;
+    }
+    header {
+      text-align: center;
+      padding: 80px 20px 40px;
+      background: linear-gradient(145deg, #ffe6eb, #fce4ec);
+      animation: fadeIn 2s ease;
+    }
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2em;
+      color: #880e4f;
+    }
+    .hero-image img {
+      width: 80%;
+      max-width: 500px;
+      border-radius: 20px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      margin: 30px auto;
+      display: block;
+      animation: fadeInUp 1.5s ease;
+    }
+    .mensagem, .final {
+      padding: 40px 20px;
+      text-align: center;
+      font-size: 1.3em;
+      background-color: #fff;
+      animation: fadeIn 1.5s ease;
+    }
+
+    .swiper-slide video,
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+    .swiper {
+      width: 90%;
+      max-width: 700px;
+      margin: auto;
+    }
+    .swiper-slide img {
+      width: 100%;
+      border-radius: 20px;
+      border: 5px solid #f8bbd0;
+    }
+    .timeline-container {
+      position: relative;
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+    }
+    .timeline-container::after {
+      content: '';
+      position: absolute;
+      width: 4px;
+      background-color: #f8bbd0;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -2px;
+    }
+    .timeline-event {
+      padding: 10px 40px;
+      position: relative;
+      background-color: inherit;
+      width: 50%;
+      animation: fadeInUp 1s ease;
+    }
+    .timeline-event::after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      right: -10px;
+      background-color: #ec407a;
+      border: 4px solid #f8bbd0;
+      top: 15px;
+      border-radius: 50%;
+      z-index: 1;
+    }
+    .left {
+      left: 0;
+    }
+    .right {
+      left: 50%;
+    }
+    .left::after {
+      left: -10px;
+    }
+    .right::after {
+      left: -10px;
+    }
+    .timeline-event p {
+      margin: 0;
+      padding: 10px;
+      background: #ffe6eb;
+      border-radius: 10px;
+    }
+    @media screen and (max-width: 768px) {
+      .timeline-event {
+        width: 100%;
+        left: 0 !important;
+        padding-left: 70px;
+        padding-right: 25px;
+      }
+      .timeline-container::after {
+        left: 30px;
+      }
+      .timeline-event::after {
+        left: 15px;
+      }
+    }
+    iframe.music {
+      display: block;
+      margin: 40px auto;
+      border-radius: 12px;
+    }
+    .final button {
+      background-color: #ec407a;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 25px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .final button:hover {
+      background-color: #d81b60;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Feliz Dia dos Namorados, meu amor ❤️</h1>
+    <p>Uma pequena lembrança da nossa história juntos.</p>
+  </header>
+
+  <div class="hero-image">
+    <img src="img/01.JPEG" alt="Imagem do casal">
+  </div>
+
+  <section class="mensagem">
+    <p>Desde o dia em que te conheci, minha vida ficou mais leve, mais divertida e mais cheia de amor. Cada momento contigo é uma lembrança que guardo no coração. Te amo hoje e sempre.</p>
+  </section>
+
+  
+<section class="timeline-container">
+  <div class="timeline-event left"><p>💬 A conversa mais aleatória  começou em 23/01/2025</p></div>
+  <div class="timeline-event right"><p>💋 Rolou o primeiro beijo em 27/01/2025 – Talvez um pouco rápido de mais na sua opnião kkkk </p></div>
+  <div class="timeline-event left"><p>🎓 Minha formatura em 21/03/2025 – ainda bem que você aceitou ir kkkkk</p></div>
+  <div class="timeline-event left"><p>❤️ O famoso "eu te amo" surgiu no rancho...</p></div>
+  <div class="timeline-event right"><p>👨‍👩‍👧 Conheci a sua família no rancho e sobrevivi kkkkkk</p></div>
+  
+</section>
+
+  
+
+  <section class="galeria">
+    <h2 style="text-align: center;">Nossas Lembranças</h2>
+    <div class="swiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <video controls>
+        <source src="img/02.MP4" type="video/mp4">
+        Seu navegador não suporta vídeos.
+      </video>
+    </div>
+    <div class="swiper-slide"><img src="img/03.JPEG" alt="Foto 2"></div>
+    <div class="swiper-slide">
+      <video controls>
+        <source src="img/04.MP4" type="video/mp4">
+        Seu navegador não suporta vídeos.
+      </video>
+    </div>
+    <div class="swiper-slide"><img src="img/05.JPEG" alt="Foto 4"></div>
+    <div class="swiper-slide"><img src="img/06.JPEG" alt="Foto 5"></div>
+    <div class="swiper-slide">
+      <video controls>
+        <source src="img/07.MP4" type="video/mp4">
+        Seu navegador não suporta vídeos.
+      </video>
+    </div>
+    <div class="swiper-slide"><img src="img/08.JPEG" alt="Foto 7"></div>
+    <div class="swiper-slide"><img src="img/09.JPEG" alt="Foto 8"></div>
+    <div class="swiper-slide">
+      <video controls>
+        <source src="img/10.MP4" type="video/mp4">
+        Seu navegador não suporta vídeos.
+      </video>
+    </div>
+    <div class="swiper-slide"><img src="img/11.JPEG" alt="Foto 10"></div>
+    <div class="swiper-slide"><img src="img/12.JPEG" alt="Foto 11"></div>
+    <div class="swiper-slide"><img src="img/13.JPEG" alt="Foto 12"></div>
+  </div>
+  <div class="swiper-pagination"></div>
+</div>
+
+  </section>
+
+  
+<h2 style="text-align: center;">Música do primeiro Story</h2>
+  <iframe 
+  style="display: block; margin: 40px auto;" 
+  src="https://open.spotify.com/embed/track/2xql0pid3EUwW38AsywxhV" 
+  width="300" 
+  height="80" 
+  frameborder="0" 
+  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+  loading="lazy">
+</iframe>
+
+
+  <section class="final">
+    <p>Tenho mais uma pergunta importante pra te fazer...</p>
+    <button onclick="window.location.href='pedido_pagina.html'">Clique aqui</button>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      autoplay: {
+        delay: 15000,
+        disableOnInteraction: false,
+      },
+    });
+  </script>
+</body>
+</html>
